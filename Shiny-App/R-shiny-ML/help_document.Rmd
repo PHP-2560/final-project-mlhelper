@@ -1,0 +1,26 @@
+---
+title: "Help Page"
+author: "Chengqian Sun & Mingxuan Bo"
+output: html_document
+---
+
+
+
+##LogTranformation
+
+In this part, log transformation was done on the numeric responsed variable of a data frame, it allows user to set a critical value of adjusted Fisher-Pearson coefficient of skewness and will automatically do the log transformation on respoonse if the FP coefficient is larger than the critical user sets, distribution plot of original response and response after transformation will be given.
+
+Learn more about [Log Transformation](https://en.wikipedia.org/wiki/Data_transformation_(statistics))
+
+## PCA
+
+This part allows users to urilize Principal Components Analysis (PCA) to achieve dimension reduction, our RShiny allows user to select response on the left penal after data was uploaded or user choosed to work on the default data. It also allow users to set the critical value of proportion of variance that Principle Components must have on the scrow bar, this value will decide how many principle components we will have after PCA, its value need to be in [0,1], largert it is, more principle components we will have.
+
+Learn more about [PCA](https://en.wikipedia.org/wiki/Principal_component_analysis)
+
+## Ridge, Lasso, Ellastic Net, Bagging and Random Forest 
+
+In this page, our system gives user a plot of mean squared error when selecting different values of lambda, "penalty coefficient" (Ridge,Lasso & Elastic Net) or when number of trees that the forest has (Bagging & Random Foest) and will give out the minimize MSE that each algorithm could achieve.
+
+Learn more abour [Ridge, Lasso & Elastic Net](https://en.wikipedia.org/wiki/Lasso_(statistics)) and [Bagging & Random Forest](https://en.wikipedia.org/wiki/Random_forest)
+

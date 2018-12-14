@@ -1,8 +1,11 @@
 ## data cleainig
 ##(1) remove NA and Inf
 ##(2) remove outliers
+##(3) remove non-numeric varaibles
 data_clean=function(object)
 {
+  #remove non-numeric variables
+  object=select_if(object,is.numeric)
   remove_special=function(object)
   {
     is.special=function(y)
